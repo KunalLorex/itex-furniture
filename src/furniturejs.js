@@ -88,18 +88,23 @@ function Furnitur() {
           onClick={() => filterSubCat("DOUBLE BED") & setActiveKey(6)}
           active={activeKey === 6}
         >
-          Double Bed
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQn9vdEevAl5RgwlInXUD7Llv47R-PZ-OzNWQ&usqp=CAU" height="30" width="30"alt="Logo" /><br />
+          Double Bed<br />
         </CNavLink>
         <CNavLink
           onClick={() => filterSubCat("CHAIR") & setActiveKey(7)}
           active={activeKey === 7}
         >
+          <img src="https://hips.hearstapps.com/vader-prod.s3.amazonaws.com/1580742487-resize.jpg?crop=1xw:1xh;center,top&resize=480:*" height="30" width="30"alt="Logo" /><br />
+
           Chair
         </CNavLink>
         <CNavLink
           onClick={() => filterSubCat("DINING TABLE") & setActiveKey(8)}
           active={activeKey === 8}
         >
+        <img src="https://5.imimg.com/data5/ES/MC/UX/SELLER-28688189/modern-dining-table-500x500.jpg" height="30" width="30"alt="Logo" /><br />
+
           Dining Table
         </CNavLink>
         <CNavItem>
@@ -107,7 +112,8 @@ function Furnitur() {
             onClick={() => filterCat("WORK FROM HOME") & setActiveKey(9)}
             active={activeKey === 9}
           >
-            
+        <img src="https://5.imimg.com/data5/ES/MC/UX/SELLER-28688189/modern-dining-table-500x500.jpg" height="30" width="30"alt="Logo" /><br />
+
             TABLE
           </CNavLink>
         </CNavItem>        
@@ -148,7 +154,7 @@ function Furnitur() {
             onClick={() => filterCat("temple") & setActiveKey(13)}
             active={activeKey === 13}
           >
-            temple
+            Temple
           </CNavLink>
         </CNavItem>
         <CNavItem>
@@ -197,16 +203,7 @@ function Furnitur() {
         </CNavItem>
         <CNavItem>
         <CNavLink href="#" disabled>
-       
-          </CNavLink>
-        </CNavItem>
-        <CNavItem>
-        <CNavLink href="#" disabled>
-       
-          </CNavLink>
-        </CNavItem>
-        <CNavItem>
-        <CNavLink href="#" disabled>
+      
        
           </CNavLink>
         </CNavItem>
@@ -238,7 +235,8 @@ function Furnitur() {
                   key={id}
                   style={{ width: "18rem", marginBottom: "10px" }}
                 >
-                  <CCardImage
+                  <CCardText className="card-da-mukabla">ID: {id}</CCardText>
+                  <CCardImage className="card-da-mukabla-da-image"
                     orientation="top"
                     src={imgSrc}
                     width={200}
@@ -246,8 +244,8 @@ function Furnitur() {
                     style={{ padding: "20px" }}
                   />
                   <CCardBody>
-                  <CCardTitle>ID: {id}</CCardTitle>
-                      <CCardText>{name} {WoodType}</CCardText>
+                  
+                      <CCardTitle className="card-da-mukabla-da-title">{name} {WoodType}</CCardTitle>
                       <CCardText>{size} </CCardText>
                   
                     </CCardBody>

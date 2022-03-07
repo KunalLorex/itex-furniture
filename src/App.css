@@ -123,7 +123,7 @@ h1 {
   font-size: 2.5em; 
 }
 .table{
-  background-color: burlywood;
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5fHTkU4_lY-Mp2rNaBLExYromjP8ZJiMzDw&usqp=CAU");
   /* margin: 15px 0 0 15px; */
   /* padding: 20px 0 0 20px;
   padding-left: 20px; */
@@ -147,3 +147,67 @@ h1 {
   font-family:serif;
 
 }
+.card-da-mukabla-da-image {
+  
+  border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+      transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+  padding: 14px 80px 18px 36px;
+  cursor:pointer;
+
+}
+.card-da-mukabla-da-image:hover{
+  transform: scale(1.3);
+  box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  /* padding: 0;
+
+  box-shadow: 0; */
+}
+.card-da-mukabla-da-title:hover{
+  font-size: 110%;
+  font-weight: bold;
+  cursor: pointer;
+}
+.EXCUSES:hover {
+  font-size: 110%
+  ;
+  font-weight:bolder;
+  cursor: pointer;
+  
+}
+.products:hover{
+  transform: scale(1.6);
+
+}
+.ab{
+   background-color: #f1df34fb; 
+   margin-right: 18px;
+
+}
+  
+  
+/* }
+
+.switch mode button{
+  cursor: pointer;
+  border: 1px solid #555;
+  text-align: right;
+  padding: 5px;
+  margin-left: 8px;
+  background-color:silver;
+}
+.dark{
+  background-color: #222;
+  color: #e6e6e6;
+} */
+footer{
+  top: 100%;
+  position: sticky;
+  background-color: #faf3f3;
+  text-align: center;
+  font-weight: bolder;
+}
+
+
+

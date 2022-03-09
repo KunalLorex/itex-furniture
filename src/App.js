@@ -11,6 +11,7 @@ import Home from './pages/Home/Home';
 import Services from './pages/Service/Services';
 import Testimonial from './pages/Testimonial/Testimonial';
 import Navbar from './components/common/navbar';
+import CarouselContainer from './components/slider';
 function App() {
  
  return(
@@ -19,6 +20,7 @@ function App() {
   <div className="App">
     {/* <Header /> */}
     <Navbar/>
+    <CarouselContainer />
 <Router>   
   {/* < Route exact path="/" element = {<Furnitur/>} />  */}
 <main>
@@ -42,6 +44,7 @@ function App() {
      </Switch>
    </main>
 </Router>
+
 
 
    </div>

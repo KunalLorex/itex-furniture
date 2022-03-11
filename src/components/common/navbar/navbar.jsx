@@ -2,7 +2,7 @@ import React , {useEffect} from 'react'
 import './navbar.css';
 import { NavLink } from 'react-router-dom';
 import $ from 'jquery';
-
+import furnlogo from './images/furnlogo.png';
 const Navbar = () => {
 
   function animation(){
@@ -47,10 +47,11 @@ const Navbar = () => {
   <nav className="navbar navbar-expand-lg navbar-mainbg">
     
       <NavLink className="navbar-brand navbar-logo" to="/" exact>
-        ITEX
+        {/* <img src={furnlogo} className="furnlog" alt="LOGO"/> */}
+        Furniturezy.com
       </NavLink>
     
-    
+
       <button 
         className="navbar-toggler"
         onClick={ function(){
@@ -76,8 +77,30 @@ const Navbar = () => {
                 </i>Home
               </NavLink>
             </li>
-
+            <a href="mailto:guptakunal738@gmail.com">
             <li className="nav-item">
+              <NavLink className="nav-link" to="#" exact>
+                <i 
+                className="fas fa-tachometer-alt">
+                  EMAIL <br /> guest@gmail.com
+                </i>
+              </NavLink>
+            </li>
+            </a>
+           
+            <a href="tel:360-325-7623">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="#" exact>
+                <i 
+                className="fas fa-tachometer-alt">
+                  call now <br/> +1 360-325-7623
+                </i>
+              </NavLink>
+            </li>
+            </a>
+            
+
+            {/* <li className="nav-item">
               <NavLink className="nav-link" to="/about" exact>
                 <i 
                 className="far fa-address-book">
@@ -105,7 +128,7 @@ const Navbar = () => {
                 className="far fa-copy">
                 </i>Contact Us
               </NavLink>
-            </li>
+            </li> */}
         </ul>
       </div>
   </nav>
